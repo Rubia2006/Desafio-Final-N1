@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Abrigos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🏠 Abrigos Disponíveis</h1>
+    
+    <!-- Abrigos -->
+    <section>
+      <h2>Abrigos com Vagas</h2>
+      <button onclick="carregarAbrigos()">🔄 Atualizar Abrigos</button>
+      <div id="abrigos-list"></div>
+    </section>
+
+    <!-- Cadastrar Pessoas -->
+    <section>
+      <h2>👤 Cadastrar Pessoa</h2>
+      <form id="form-pessoa">
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="number" id="abrigos_id" placeholder="Abrigo ID" required>
+        <input type="number" id="quantidade" placeholder="Qtd Pessoas" value="1">
+        <input type="text" id="necessidade" placeholder="Necessidade">
+        <input type="text" id="tempo" placeholder="Tempo">
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+    <!-- Pessoas -->
+    <section>
+      <h2>Pessoas nos Abrigos</h2>
+      <button onclick="carregarPessoas()">🔄 Pessoas</button>
+      <div id="pessoas-list"></div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
