@@ -5,7 +5,14 @@ O Desafio Final tinha como proposta uma solução tecnológica capaz de organiza
 entre as pessoas que precisam de ajuda. Minha solução foi pensar na organização dos abrigos, tentando buscar um abrigo próximo do local aonde a pessoa
 se econtra e que tenha a disponibilidade de vagas baseado na quantidade de pessoas por famílias que necessitem de um local para ficar. 
 
-Essa API nos permite criar registros, visualizar, atualizar e deletar ocorrencias.
+Essa API nos permite criar registros, visualizar, atualizar e deletar ocorrências.
+
+## 🎯 Problema que Resolvemos
+- Dificuldade em encontrar abrigos próximos e confiáveis rapidamente.
+
+- Falta de informações atualizadas sobre capacidade, suprimentos e rotas seguras.
+
+- Alertas em Tempo Real: Notificações push sobre vagas disponíveis e condições climáticas.
 
 ### 💻 Tecnologias ultilizadas
 
