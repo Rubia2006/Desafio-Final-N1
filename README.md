@@ -32,7 +32,6 @@ se econtra e que tenha a disponibilidade de vagas baseado na quantidade de pesso
 npm run dev
 ```
 `http:localhost:3000`
-(`http:localhost:3000`)
 
 ---
 
