@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Sistema de Abrigos</title>
+    <meta charset="UTF-8">
+  <title>Abrigos</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,24 +17,24 @@
     </section>
 
     <!-- Cadastrar Pessoas -->
-    <section>
-      <h2>👤 Cadastrar Pessoa</h2>
-      <form id="form-pessoa">
-        <input type="text" id="nome" placeholder="Nome" required>
-        <input type="number" id="abrigos_id" placeholder="Abrigo ID" required>
-        <input type="number" id="quantidade" placeholder="Qtd Pessoas" value="1">
-        <input type="text" id="necessidade" placeholder="Necessidade">
-        <input type="text" id="tempo" placeholder="Tempo">
-        <button type="submit">Cadastrar</button>
-      </form>
-    </section>
+     <h2>👤 Cadastrar Pessoa</h2>
+   <form id="form-pessoa">
+    <input **id="nome"** placeholder="Nome" required>
+    <input **id="abrigos_id"** placeholder="Abrigo ID" type="number" required>
+    <input **id="quantidade"** placeholder="Qtd Pessoas" type="number" value="1" required>
+    <input **id="necessidade"** placeholder="Necessidade">
+    <input **id="tempo"** placeholder="Tempo">
+    <button type="submit">Cadastrar</button>
+</form>
 
     <!-- Pessoas -->
     <section>
       <h2>Pessoas nos Abrigos</h2>
       <button onclick="carregarPessoas()">🔄 Pessoas</button>
       <div id="pessoas-list"></div>
+      <div id="abrigos-list"></div>
     </section>
+    
   </div>
   <script src="script.js"></script>
 </body>

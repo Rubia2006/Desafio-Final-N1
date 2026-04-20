@@ -29,11 +29,11 @@ await db.exec(`
  if(checagemAbrigos.total === 0)   {
  await db.exec(`
  INSERT INTO abrigos (nome, endereco, telefone, capacidade, vagas_disponiveis) VALUES
- ("Ginasio James Ferreira", "Rua Major João Rocha, 198", 11987654321, 100, 20),
- ("Escola Abelard Pereira",  "Rua Antônio Carlos, 123", 11987654322, 200, 52),
- ("Escola João Pereira", "Rua das Flores, 60", 11987654323, 150, 22),
- ("Escola Deputado Patrus de Souza", "Rua Santa Luzia", 11987654324, 200, 12),
- ("Ginasio PoliEsportivo", "Bairro Garças, 1200", 11987654325, 200, 16)
+ ("Ginasio James Ferreira", "Rua Major João Rocha, 198", 11987654321, 50, 20),
+ ("Escola Abelard Pereira",  "Rua Antônio Carlos, 123", 11987654322, 60, 52),
+ ("Escola João Pereira", "Rua das Flores, 60", 11987654323, 70, 22),
+ ("Escola Deputado Patrus de Souza", "Rua Santa Luzia, 356", 11987654324, 80, 12),
+ ("Ginasio PoliEsportivo", "Bairro Garças, 1200", 11987654325, 100, 16)
  `);
 
  console.log("Abrigos inseridos com sucesso!");

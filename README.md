@@ -97,10 +97,10 @@ database.db
 |Campo	          |Descrição                  |
 |-----------------|---------------------------|
 |id	              |Identificador único        |
-|nome	          |nome do abrigo             |          
+|nome	            |nome do abrigo             |          
 |endereco         |localização do abrigo      |
 |telefone         |telefone do abrigo         |
-|capaciadade	  |capacidade total do abrigo |
+|capaciadade	    |capacidade total do abrigo |
 |vagas_disponieis |vagas disponieis           |
 |atualizado_em    |data atual                 |
 
@@ -112,32 +112,39 @@ database.db
 |Campo               |	Descrição|
 |--------------------|---------------------------------------------|
 |id	                 |Identificador único                          |
-|nome	             |nome da pessoa                               |
+|nome	               |nome da pessoa                               |
 |bairro	             |localização da pessoa                        |
 |quantidade_pessoas	 |quantas pessoas vão precisar do abrigo       |
 |necessidade_imediata|	o que a pessoa precisa nesse momento       |
 |abrigos_id          |	id do abrigo que ela quer ficar            |
 |capacidade	         |capacidade total do abrigo                   |  
 |tempo_permanencia   |	tempo que a pessoa pretende ficar no abrigo|
-|data_entrada	     |data que ela vai entrar no abrigo            |
+|data_entrada	       |data que ela vai entrar no abrigo            |
 |data_saida          |	data da baixa da pessoa do sistema         |
 |atualizado_em       |	data atual                                 |
 
 
 ### 🧷 Endpoints
-Rota inicial
+Rota inicial:
+```http
 GET /
+```
 Retorna uma página HTML simples com informações da API.
 
-Rota para listar todos os abrigos
+Rota para listar todos os abrigos:
+```http
 GET /abrigos
+```
 Retorna todos os registros de abrigos do banco de dados
 
-Rota para listar todas as pessoas
+Rota para listar todas as pessoas:
+```http
 GET /pessoas
+```
 Retorna todos os registros de pessoas do banco de dados
 
-Rota para postar pessoas
+Rota para postar pessoas:
+```json
 POST /pessoas
 Body (JSON)
 {
@@ -148,13 +155,19 @@ Body (JSON)
   "abrigos_id": 4,
   "tempo_permanencia": "20 dias"
 }
+```
 
-Rota para listar abrigos disponíveis
+Rota para listar abrigos disponíveis:
+```http
 GET /abrigos/disponiveis
+```
 Retorna todos os abrigos disponiveis pelo número de vagas
 
-Rota para deletar uma pessoa do abrigo 
+Rota para deletar uma pessoa do abrigo:
+```http
 DELETE /pessoas/:nome/:abrido_id
+```
+Inclui a data de saída na tabela, mas sem apagar o registro dela
 
 
 ### 📚 Conceitos
@@ -164,7 +177,7 @@ Rotas com Express
 - SQL Básico
 - Uso de req.params e req.body
 
-###🎯 Observações
+### 🎯 Observações
 - O banco de dados é criado automaticamente
 - Dados inciais são inseridos apenas se estiver vazio
 - A API pode ser testada com o Postman

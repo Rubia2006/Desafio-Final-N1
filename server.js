@@ -60,9 +60,9 @@ app.post("/pessoas", async (req, res) => {
 app.get("/abrigos/disponiveis", async (req, res) => {
     const db = await criarBanco();
     const abrigos = await db.all(`
-        SELECT 
+          SELECT 
             a.id,
-            a.nome AS abrigo_id,
+            a.nome AS nome_abrigo, 
             a.endereco,
             a.telefone,
             a.capacidade,
