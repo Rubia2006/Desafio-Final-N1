@@ -77,20 +77,29 @@ database.db
 ### 🧷 Endpoints
 
 ###### Rota inicial
+```html
 GET /
+```
 Retorna uma página HTML simples com informações da API.
 
 ###### Rota para listar todos os abrigos
+```html
 GET /abrigos
+```
 Retorna todos os registros de abrigos do banco de dados
 
 ###### Rota para listar todas as pessoas
+```html
 GET /pessoas
+```
 Retorna todos os registros de pessoas do banco de dados
 
 ###### Rota para postar pessoas
+```html
 POST /pessoas
+```
 Body (JSON)
+```json
 {
   "nome": "Rúbia Silva",
   "bairro": "Garças",
@@ -99,14 +108,18 @@ Body (JSON)
   "abrigos_id": 4,
   "tempo_permanencia": "20 dias"
 }
+```
 
 ###### Rota para listar abrigos disponíveis
+```html
 GET /abrigos/disponiveis
+```
 Retorna todos os abrigos disponiveis pelo número de vagas
 
 ###### Rota para deletar uma pessoa do abrigo 
+```html
 DELETE /pessoas/:nome/:abrido_id
-
+```
 
 ### 📚 Conceitos
 Rotas com Express
