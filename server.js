@@ -74,26 +74,6 @@ app.get("/abrigos/disponiveis", async (req, res) => {
         ORDER BY vagas_livres DESC`);
     res.json(abrigos);});
 
-//Vagas por abrigo - FUNCIONANDO
-app.get("/abrigos/vagas", async (req, res) => {
-    const db = await criarBanco();
-    const abrigos = await db.all(`
-        SELECT 
-            a.id,
-            a.nome AS abrigo_id,
-            a.endereco,
-            a.telefone,
-            a.capacidade,
-            COALESCE(SUM(p.quantidade_pessoas), 0) AS ocupadas,
-            (a.capacidade - COALESCE(SUM(p.quantidade_pessoas), 0)) AS vagas_livres
-        FROM abrigos a 
-        LEFT JOIN pessoas p ON a.id = p.abrigos_id 
-        GROUP BY a.id 
-        ORDER BY vagas_livres DESC
-    `);
-    res.json(abrigos);
-});
-
 //Rota de remoção da pessoa do abrigo - FUNCIONANDO
 app.delete("/pessoas/:nome/:abrigos_id", async (req, res) => {
 const { nome } = req.params;
