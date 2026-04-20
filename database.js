@@ -32,7 +32,7 @@ await db.exec(`
  ("Ginasio James Ferreira", "Rua Major João Rocha, 198", 11987654321, 100, 20),
  ("Escola Abelard Pereira",  "Rua Antônio Carlos, 123", 11987654322, 200, 52),
  ("Escola João Pereira", "Rua das Flores, 60", 11987654323, 150, 22),
- ("Escola Deputado Patrus de Souza", "Rua Santa Luzia", 11987654324, 200, 12),
+ ("Escola Deputado Patrus de Souza", "Rua Santa Luzia, 133", 11987654324, 200, 12),
  ("Ginasio PoliEsportivo", "Bairro Garças, 1200", 11987654325, 200, 16)
  `);
 
