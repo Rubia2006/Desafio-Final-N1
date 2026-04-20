@@ -31,7 +31,7 @@ se econtra e que tenha a disponibilidade de vagas baseado na quantidade de pesso
 ```bash
 npm run dev
 ```
-`http:localhost:300`
+`http:localhost:3000`
 [Clique aqui](`http:localhost:3000`)
 
 ---
