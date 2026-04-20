@@ -10,8 +10,6 @@ se econtra e que tenha a disponibilidade de vagas baseado na quantidade de pesso
 
 - Falta de informações atualizadas sobre capacidade, suprimentos e rotas seguras.
 
-- Alertas em Tempo Real: Notificações push sobre vagas disponíveis e condições climáticas.
-
 ### 💻 Tecnologias ultilizadas
 
 - Node.js
@@ -42,62 +40,16 @@ O banco de dados é criado automaticamente ao inicar o projeto.
 database.db
 ```
 
-# 🚀 Desafio Final - N1
 
-## 📌 Sobre o projeto
-O Desafio Final tinha como proposta uma solução tecnológica capaz de organizar e conectar informações relevantes em um cenário de enchente, facilitando a comunicação
-entre as pessoas que precisam de ajuda. Minha solução foi pensar na organização dos abrigos, tentando buscar um abrigo próximo do local aonde a pessoa
-se econtra e que tenha a disponibilidade de vagas baseado na quantidade de pessoas por famílias que necessitem de um local para ficar. 
+#### 📋 Tabela de abrigos 
 
-Essa API nos permite criar registros, visualizar, atualizar e deletar ocorrências.
-
-## 🎯 Problema que Resolvemos
-- Dificuldade em encontrar abrigos próximos e confiáveis rapidamente.
-
-- Falta de informações atualizadas sobre capacidade, suprimentos e rotas seguras.
-
-- Alertas em Tempo Real: Notificações push sobre vagas disponíveis e condições climáticas.
-
-### 💻 Tecnologias ultilizadas
-
-- Node.js
-- Express
-- SQLite
-- SQLite3
-- Postman
-- Nodemon
-
----
-
-### ⚙️ Instalação
-
-`npm install`
-
-### ▶️ Como executar
-```bash
-npm run dev
-```
-`http:localhost:300`
-[Clique aqui](`http:localhost:3000`)
-
----
-
-### 💾 Banco de Dados
-O banco de dados é criado automaticamente ao inicar o projeto.
-
-```
-database.db
-```
-
-
-📋 Tabela de abrigos 
 |Campo	          |Descrição                  |
 |-----------------|---------------------------|
 |id	              |Identificador único        |
-|nome	          |nome do abrigo             |          
+|nome	            |nome do abrigo             |          
 |endereco         |localização do abrigo      |
 |telefone         |telefone do abrigo         |
-|capaciadade	  |capacidade total do abrigo |
+|capaciadade	    |capacidade total do abrigo |
 |vagas_disponieis |vagas disponieis           |
 |atualizado_em    |data atual                 |
 
@@ -105,36 +57,38 @@ database.db
 ----------------
 
 
-📋 Tabela de pessoas 
+#### 📋 Tabela de pessoas 
+
 |Campo               |	Descrição|
 |--------------------|---------------------------------------------|
 |id	                 |Identificador único                          |
-|nome	             |nome da pessoa                               |
+|nome	               |nome da pessoa                               |
 |bairro	             |localização da pessoa                        |
 |quantidade_pessoas	 |quantas pessoas vão precisar do abrigo       |
 |necessidade_imediata|	o que a pessoa precisa nesse momento       |
 |abrigos_id          |	id do abrigo que ela quer ficar            |
 |capacidade	         |capacidade total do abrigo                   |  
 |tempo_permanencia   |	tempo que a pessoa pretende ficar no abrigo|
-|data_entrada	     |data que ela vai entrar no abrigo            |
+|data_entrada	       |data que ela vai entrar no abrigo            |
 |data_saida          |	data da baixa da pessoa do sistema         |
 |atualizado_em       |	data atual                                 |
 
 
 ### 🧷 Endpoints
-Rota inicial
+
+###### Rota inicial
 GET /
 Retorna uma página HTML simples com informações da API.
 
-Rota para listar todos os abrigos
+###### Rota para listar todos os abrigos
 GET /abrigos
 Retorna todos os registros de abrigos do banco de dados
 
-Rota para listar todas as pessoas
+###### Rota para listar todas as pessoas
 GET /pessoas
 Retorna todos os registros de pessoas do banco de dados
 
-Rota para postar pessoas
+###### Rota para postar pessoas
 POST /pessoas
 Body (JSON)
 {
@@ -146,11 +100,11 @@ Body (JSON)
   "tempo_permanencia": "20 dias"
 }
 
-Rota para listar abrigos disponíveis
+###### Rota para listar abrigos disponíveis
 GET /abrigos/disponiveis
 Retorna todos os abrigos disponiveis pelo número de vagas
 
-Rota para deletar uma pessoa do abrigo 
+###### Rota para deletar uma pessoa do abrigo 
 DELETE /pessoas/:nome/:abrido_id
 
 
