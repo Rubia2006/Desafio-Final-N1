@@ -115,7 +115,7 @@ Rotas com Express
 - SQL Básico
 - Uso de req.params e req.body
 
-###🎯 Observações
+### 🎯 Observações
 - O banco de dados é criado automaticamente
 - Dados inciais são inseridos apenas se estiver vazio
 - A API pode ser testada com o Postman
