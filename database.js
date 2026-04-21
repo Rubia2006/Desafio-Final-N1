@@ -51,7 +51,7 @@ await db.exec(`
     abrigos_id INTEGER NOT NULL,
     capacidade INTEGER,
     tempo_permanencia TEXT,
-    data_entrada TEXT DEFAULT (date('now')),
+    data_entrada TEXT,
     data_saida TEXT,
     atualizado_em TEXT DEFAULT (date('now')),
     FOREIGN KEY (abrigos_id) REFERENCES abrigos(id) ON DELETE RESTRICT

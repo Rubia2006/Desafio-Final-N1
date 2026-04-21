@@ -15,35 +15,54 @@
       <button onclick="carregarAbrigos()">🔄 Atualizar Abrigos</button>
       <div id="abrigos-list"></div>
     </section>
-
 <!-- Cadastrar Pessoas -->
-<h2>👤 Cadastrar Pessoa</h2>
-<form id="form-pessoa" class="cadastro-layout">
-    <div class="linha1">
-        <input id="nome" placeholder="Nome" required>
-    <div class="numero-pessoas">
-        <input id="quantidade" type="number" value="1" min="1" max="20" required 
-               placeholder="Nº Pessoas">
-    </div>
-</div>
-<div class="linha2">
-    <select id="tempo" required>
-        <option value="" disabled selected>Tempo permanência...</option>
-        <option value="menos de 24h">Menos de 24h</option>
-        <option value="1 a 3 dias">1 a 3 dias</option>
-        <option value="até 1 semana">Até 1 semana</option>
-        <option value="indefinido">Indefinido</option>
-    </select>
-    <input id="necessidade" placeholder="Necessidade imediata">
-  </div>
-    <div class="linha3">
-        <select id="abrigos_select" required>
-            <option value="">Selecione abrigo...</option>
-        </select>
-        <button type="submit">✅ Cadastrar</button>
-    </div>
-</form>
+ <h2>👤 Cadastrar Pessoa</h2>
+<form id="form-pessoa">
+    <div class="inputs-linha" style="display:flex; flex-wrap:nowrap; gap:6px;">
 
+        <input id="nome" placeholder="Nome completo" required 
+               style="flex:2; height:36px; padding:4px 8px; font-size:12px; border-radius:8px;">
+        
+        <div style="flex:0.6; position:relative; height:44px;">
+    <!-- INPUT PRIMEIRO -->
+    <input id="quantidade" type="number" value="1" min="1" max="20" required 
+           style="
+               position:relative; z-index:2;
+               width:100%; height:100%;
+               padding:20px 20px 20px 45px;
+               font-size:14px; border:4px solid #666;
+               border-radius:10px; background:white;
+               box-sizing:border-box;
+           ">
+    
+    <!-- LABEL DEPOIS -->
+    <label style="
+        position:absolute; left:20px; top:50%;
+        transform:translateY(-50%);
+        font-size:12px; font-weight:600; color:#666;
+        pointer-events:none !important;
+        background:white; padding:0 5px;
+        z-index:1;  
+    ">Nº pessoas</label>
+</div>
+
+        <select id="tempo" required style="flex:2; height:36px; padding:4px 8px; font-size:12px; border-radius:8px;">
+            <option value="" disabled selected>Tempo...</option>
+            <option value="menos de 24h">Menos 24h</option>
+            <option value="1 a 3 dias">1-3 dias</option>
+            <option value="até 1 semana">1 semana</option>
+            <option value="indefinido">Indefinido</option>
+        </select>
+        
+        <input id="necessidade" placeholder="Necessidade" 
+               style="flex:2; height:36px; padding:4px 8px; font-size:12px; border-radius:8px;">
+        
+        <select id="abrigos_select" required style="flex:2; height:36px; padding:14px 22px; font-size:60px; border-radius:10px;">
+            <option value="">Abrigo...</option>
+        </select>
+    </div>
+    <button type="submit" style="width:100%; height:40px; margin-top:8px;" class="btn">✅ Cadastrar</button>
+</form>
     <!-- Pessoas -->
     <section>
       <h2>Pessoas nos Abrigos</h2>
