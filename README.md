@@ -5,14 +5,10 @@ O Desafio Final tinha como proposta uma solução tecnológica capaz de organiza
 entre as pessoas que precisam de ajuda. Minha solução foi pensar na organização dos abrigos, tentando buscar um abrigo próximo do local aonde a pessoa
 se econtra e que tenha a disponibilidade de vagas baseado na quantidade de pessoas por famílias que necessitem de um local para ficar. 
 
-Essa API nos permite criar registros, visualizar, atualizar e deletar ocorrências.
-
 ## 🎯 Problema que Resolvemos
 - Dificuldade em encontrar abrigos próximos e confiáveis rapidamente.
 
 - Falta de informações atualizadas sobre capacidade, suprimentos e rotas seguras.
-
-- Alertas em Tempo Real: Notificações push sobre vagas disponíveis e condições climáticas.
 
 ### 💻 Tecnologias ultilizadas
 
@@ -33,55 +29,7 @@ Essa API nos permite criar registros, visualizar, atualizar e deletar ocorrênci
 ```bash
 npm run dev
 ```
-`http:localhost:300`
-[Clique aqui](`http:localhost:3000`)
-
----
-
-### 💾 Banco de Dados
-O banco de dados é criado automaticamente ao inicar o projeto.
-
-```
-database.db
-```
-
-# 🚀 Desafio Final - N1
-
-## 📌 Sobre o projeto
-O Desafio Final tinha como proposta uma solução tecnológica capaz de organizar e conectar informações relevantes em um cenário de enchente, facilitando a comunicação
-entre as pessoas que precisam de ajuda. Minha solução foi pensar na organização dos abrigos, tentando buscar um abrigo próximo do local aonde a pessoa
-se econtra e que tenha a disponibilidade de vagas baseado na quantidade de pessoas por famílias que necessitem de um local para ficar. 
-
-Essa API nos permite criar registros, visualizar, atualizar e deletar ocorrências.
-
-## 🎯 Problema que Resolvemos
-- Dificuldade em encontrar abrigos próximos e confiáveis rapidamente.
-
-- Falta de informações atualizadas sobre capacidade, suprimentos e rotas seguras.
-
-- Alertas em Tempo Real: Notificações push sobre vagas disponíveis e condições climáticas.
-
-### 💻 Tecnologias ultilizadas
-
-- Node.js
-- Express
-- SQLite
-- SQLite3
-- Postman
-- Nodemon
-
----
-
-### ⚙️ Instalação
-
-`npm install`
-
-### ▶️ Como executar
-```bash
-npm run dev
-```
-`http:localhost:300`
-[Clique aqui](`http:localhost:3000`)
+`http:localhost:3000`
 
 ---
 
@@ -93,7 +41,8 @@ database.db
 ```
 
 
-📋 Tabela de abrigos 
+#### 📋 Tabela de abrigos 
+
 |Campo	          |Descrição                  |
 |-----------------|---------------------------|
 |id	              |Identificador único        |
@@ -108,7 +57,8 @@ database.db
 ----------------
 
 
-📋 Tabela de pessoas 
+#### 📋 Tabela de pessoas 
+
 |Campo               |	Descrição|
 |--------------------|---------------------------------------------|
 |id	                 |Identificador único                          |
@@ -125,28 +75,51 @@ database.db
 
 
 ### 🧷 Endpoints
+<<<<<<< HEAD
 Rota inicial:
 ```http
+=======
+
+###### Rota inicial
+```html
+>>>>>>> 0a6c6e2c7b659122e79cadeecd8dd85390975df6
 GET /
 ```
 Retorna uma página HTML simples com informações da API.
 
+<<<<<<< HEAD
 Rota para listar todos os abrigos:
 ```http
+=======
+###### Rota para listar todos os abrigos
+```html
+>>>>>>> 0a6c6e2c7b659122e79cadeecd8dd85390975df6
 GET /abrigos
 ```
 Retorna todos os registros de abrigos do banco de dados
 
+<<<<<<< HEAD
 Rota para listar todas as pessoas:
 ```http
+=======
+###### Rota para listar todas as pessoas
+```html
+>>>>>>> 0a6c6e2c7b659122e79cadeecd8dd85390975df6
 GET /pessoas
 ```
 Retorna todos os registros de pessoas do banco de dados
 
+<<<<<<< HEAD
 Rota para postar pessoas:
 ```json
+=======
+###### Rota para postar pessoas
+```html
+>>>>>>> 0a6c6e2c7b659122e79cadeecd8dd85390975df6
 POST /pessoas
+```
 Body (JSON)
+```json
 {
   "nome": "Rúbia Silva",
   "bairro": "Garças",
@@ -157,18 +130,30 @@ Body (JSON)
 }
 ```
 
+<<<<<<< HEAD
 Rota para listar abrigos disponíveis:
 ```http
+=======
+###### Rota para listar abrigos disponíveis
+```html
+>>>>>>> 0a6c6e2c7b659122e79cadeecd8dd85390975df6
 GET /abrigos/disponiveis
 ```
 Retorna todos os abrigos disponiveis pelo número de vagas
 
+<<<<<<< HEAD
 Rota para deletar uma pessoa do abrigo:
 ```http
 DELETE /pessoas/:nome/:abrido_id
 ```
 Inclui a data de saída na tabela, mas sem apagar o registro dela
 
+=======
+###### Rota para deletar uma pessoa do abrigo 
+```html
+DELETE /pessoas/:nome/:abrido_id
+```
+>>>>>>> 0a6c6e2c7b659122e79cadeecd8dd85390975df6
 
 ### 📚 Conceitos
 Rotas com Express
