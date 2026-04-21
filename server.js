@@ -71,7 +71,7 @@ app.get("/abrigos/disponiveis", async (req, res) => {
         FROM abrigos a 
         LEFT JOIN pessoas p ON a.id = p.abrigos_id 
         GROUP BY a.id 
-        ORDER BY vagas_livres DESC`);
+        ORDER BY a.id ASC`);
     res.json(abrigos);});
 
 //Rota de remoção da pessoa do abrigo - FUNCIONANDO
