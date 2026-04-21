@@ -75,49 +75,30 @@ database.db
 
 
 ### 🧷 Endpoints
-<<<<<<< HEAD
-Rota inicial:
-```http
-=======
 
-###### Rota inicial
+##### Rota inicial
 ```html
->>>>>>> 0a6c6e2c7b659122e79cadeecd8dd85390975df6
 GET /
 ```
 Retorna uma página HTML simples com informações da API.
 
-<<<<<<< HEAD
-Rota para listar todos os abrigos:
-```http
-=======
 ###### Rota para listar todos os abrigos
 ```html
->>>>>>> 0a6c6e2c7b659122e79cadeecd8dd85390975df6
 GET /abrigos
 ```
 Retorna todos os registros de abrigos do banco de dados
 
-<<<<<<< HEAD
-Rota para listar todas as pessoas:
-```http
-=======
 ###### Rota para listar todas as pessoas
 ```html
->>>>>>> 0a6c6e2c7b659122e79cadeecd8dd85390975df6
 GET /pessoas
 ```
 Retorna todos os registros de pessoas do banco de dados
 
-<<<<<<< HEAD
-Rota para postar pessoas:
-```json
-=======
 ###### Rota para postar pessoas
-```html
->>>>>>> 0a6c6e2c7b659122e79cadeecd8dd85390975df6
+```json
 POST /pessoas
 ```
+
 Body (JSON)
 ```json
 {
@@ -130,30 +111,17 @@ Body (JSON)
 }
 ```
 
-<<<<<<< HEAD
-Rota para listar abrigos disponíveis:
-```http
-=======
-###### Rota para listar abrigos disponíveis
+###### Rota para listar abrigos disponíveis:
 ```html
->>>>>>> 0a6c6e2c7b659122e79cadeecd8dd85390975df6
 GET /abrigos/disponiveis
 ```
 Retorna todos os abrigos disponiveis pelo número de vagas
 
-<<<<<<< HEAD
-Rota para deletar uma pessoa do abrigo:
-```http
-DELETE /pessoas/:nome/:abrido_id
-```
-Inclui a data de saída na tabela, mas sem apagar o registro dela
-
-=======
-###### Rota para deletar uma pessoa do abrigo 
+###### Rota para deletar uma pessoa do abrigo:
 ```html
 DELETE /pessoas/:nome/:abrido_id
 ```
->>>>>>> 0a6c6e2c7b659122e79cadeecd8dd85390975df6
+Inclui a data de saída na tabela, mas sem apagar o registro dela
 
 ### 📚 Conceitos
 Rotas com Express
