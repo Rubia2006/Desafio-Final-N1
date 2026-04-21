@@ -72,12 +72,9 @@ app.get("/abrigos/disponiveis", async (req, res) => {
         LEFT JOIN pessoas p ON a.id = p.abrigos_id 
         GROUP BY a.id 
         ORDER BY a.id ASC`);
-<<<<<<< HEAD
         console.log('=== ORDEM DOS ABRIGOS ===');
         abrigos.forEach(a => console.log(`${a.id} - ${a.nome_abrigo}`));
         console.log('======================');
-=======
->>>>>>> a2a36c75f1934eab77fcebc0bbae48022ec12773
     res.json(abrigos);});
 
 //Rota de remoção da pessoa do abrigo - FUNCIONANDO
