@@ -16,15 +16,32 @@
       <div id="abrigos-list"></div>
     </section>
 
-    <!-- Cadastrar Pessoas -->
-     <h2>👤 Cadastrar Pessoa</h2>
-   <form id="form-pessoa">
-    <input **id="nome"** placeholder="Nome" required>
-    <input **id="abrigos_id"** placeholder="Abrigo ID" type="number" required>
-    <input **id="quantidade"** placeholder="Qtd Pessoas" type="number" value="1" required>
-    <input **id="necessidade"** placeholder="Necessidade">
-    <input **id="tempo"** placeholder="Tempo">
-    <button type="submit">Cadastrar</button>
+<!-- Cadastrar Pessoas -->
+<h2>👤 Cadastrar Pessoa</h2>
+<form id="form-pessoa" class="cadastro-layout">
+    <div class="linha1">
+        <input id="nome" placeholder="Nome" required>
+    <div class="numero-pessoas">
+        <input id="quantidade" type="number" value="1" min="1" max="20" required 
+               placeholder="Nº Pessoas">
+    </div>
+</div>
+<div class="linha2">
+    <select id="tempo" required>
+        <option value="" disabled selected>Tempo permanência...</option>
+        <option value="menos de 24h">Menos de 24h</option>
+        <option value="1 a 3 dias">1 a 3 dias</option>
+        <option value="até 1 semana">Até 1 semana</option>
+        <option value="indefinido">Indefinido</option>
+    </select>
+    <input id="necessidade" placeholder="Necessidade imediata">
+  </div>
+    <div class="linha3">
+        <select id="abrigos_select" required>
+            <option value="">Selecione abrigo...</option>
+        </select>
+        <button type="submit">✅ Cadastrar</button>
+    </div>
 </form>
 
     <!-- Pessoas -->

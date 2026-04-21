@@ -58,7 +58,7 @@ form {
   flex-wrap: wrap; 
   margin-bottom: 24px; 
   background: var(--bg-card); 
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   border: 1px solid var(--accent);
 }
@@ -141,14 +141,6 @@ button:hover {
 .vagas { color: #4CAF50; font-weight: bold; font-size: 1.1em; }
 .vaga-baixa .vagas { color: #f44336; }
 
-.id-badge {
-    background: #667eea; color: white; 
-    padding: 3px 8px; border-radius: 12px; 
-    font-weight: bold; font-size: 0.85em; 
-    margin-right: 8px;
-}
-</style>
-
 @media (max-width: 768px) { 
   body { padding: 16px; }
   form { flex-direction: column; }
@@ -156,3 +148,175 @@ button:hover {
   h1 { font-size: 1.8em; }
   .abrigo, .pessoa { margin: 12px 0; padding: 16px; }
 }
+.form-exato {
+    max-width: 600px;
+    padding: 25px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    gap: 15px;
+}
+
+.form-exato > div {
+    margin-bottom: 15px;
+}
+
+.linha1, .linha2, .linha3 {
+    display: flex;
+    gap: 15px;
+    align-items: end;
+}
+
+.linha1 input, .linha2 input, .linha3 select {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.pessoas-box {
+    display: flex;
+    flex-direction: column;
+    min-width: 120px;
+    gap: 3px;
+}
+
+.pessoas-box label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+    margin: 0;
+}
+
+.pessoas-box input {
+    padding: 8px 10px;
+    font-size: 16px;
+    width: 60px;
+}
+
+.linha3 button {
+    padding: 12px 25px;
+    background: #002147;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.linha1 { display: flex; gap: 15px; align-items: end; }
+.pessoas-box { display: flex; flex-direction}
+.id-badge {
+    background: #13267bf0; color: white; 
+    padding: 3px 8px; border-radius: 12px; 
+    font-weight: bold; font-size: 0.85em; 
+    margin-right: 8px;
+}
+.linha3 button:hover {
+    background: #13267bf0;
+  }
+
+#form-pessoa input,
+#form-pessoa select {
+    padding: 16px 20px;
+    border: 2px solid #04213b;
+    border-radius: 22px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+#form-pessoa input:focus,
+#form-pessoa select:focus {
+    border-color: #c;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0,123,255,0.1);
+    transform: scale(1.02);
+}
+
+.pessoas-grupo input {
+    border-radius: 15px;  
+    padding: 16px 20px;
+}
+
+button {
+    border-radius: 22px;  
+    padding: ;
+}
+#abrigos_select option[disabled][value=""] {
+    color: #666 !important;  
+    font-style: italic;
+}
+
+#abrigos_select {
+    color: #666;  
+    padding: 16px 20px;
+    border: 2px solid #04213b;
+    border-radius: 25px;
+}
+#abrigos_select:focus {
+    border-color: #04213b;
+}
+#form-pessoa select {
+    padding: 16px 20px;
+    border: 2px solid #04213b;
+    border-radius: 25px;
+    font-size: 16px;
+    background: white;
+    cursor: pointer;
+}
+
+#form-pessoa select option[disabled][value=""] {
+    color: #666;  
+    padding: 16px 20px;
+    border: 2px solid #04213b;
+    border-radius: 25px;
+}
+/* Adicione no style.css */
+#form-pessoa select#tempo option[disabled][value=""] {
+    color: #666 !important;     
+    font-style: italic;
+    background: #f5f5f5;
+}
+
+#form-pessoa select#tempo {
+    color: #666;               
+    padding: 16px 20px;
+    border: 2px solid #04213b;
+    border-radius: 25px;
+    aling: right;
+}
+
+#form-pessoa input#nome,
+#form-pessoa select#abrigos_select,
+#form-pessoa input#necessidade {
+    flex: 1.5; 
+    min-width: 220px;
+    font-size: 17px;
+}
+
+#form-pessoa input#nome,
+#form-pessoa select#abrigos_select,
+#form-pessoa input#necessidade {
+    padding: 16px 30px;  
+    min-width: 260px;    
+}
+
+.linha3 button {
+    padding: 14px 20px;  /* ← DIREITA=40px */
+    margin-left: auto;
+    aling: right;
+}
+/* style.css - Necessidade MESMO tamanho do abrigo */
+#form-pessoa input#necessidade {
+    flex: 1.5;      
+    min-width: 260px; 
+    padding: 16px 30px; 
+    font-size: 17px;  
+}
+
+.linha2 {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: center; 
+  }

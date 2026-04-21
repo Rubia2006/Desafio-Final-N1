@@ -76,25 +76,25 @@ database.db
 
 ### 🧷 Endpoints
 
-##### Rota inicial
+#### Rota inicial
 ```html
 GET /
 ```
 Retorna uma página HTML simples com informações da API.
 
-###### Rota para listar todos os abrigos
+##### Rota para listar todos os abrigos
 ```html
 GET /abrigos
 ```
 Retorna todos os registros de abrigos do banco de dados
 
-###### Rota para listar todas as pessoas
+##### Rota para listar todas as pessoas
 ```html
 GET /pessoas
 ```
 Retorna todos os registros de pessoas do banco de dados
 
-###### Rota para postar pessoas
+##### Rota para postar pessoas
 ```json
 POST /pessoas
 ```
@@ -111,13 +111,13 @@ Body (JSON)
 }
 ```
 
-###### Rota para listar abrigos disponíveis:
+##### Rota para listar abrigos disponíveis:
 ```html
 GET /abrigos/disponiveis
 ```
 Retorna todos os abrigos disponiveis pelo número de vagas
 
-###### Rota para deletar uma pessoa do abrigo:
+##### Rota para deletar uma pessoa do abrigo:
 ```html
 DELETE /pessoas/:nome/:abrido_id
 ```
